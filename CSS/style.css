@@ -109,7 +109,7 @@ p {
 
 #navbar.navbar--dark {
   background-color: var(--color-dark-blue);
-  padding: 2px;
+  padding: 8px 0;
 }
 
 #navbar a {
@@ -118,10 +118,10 @@ p {
 
 .navbar__menu {
   display: flex;
-
 }
 
 .navbar__logo{
+  padding-left: 16px;
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
 }
@@ -144,7 +144,7 @@ p {
 
 .navbar__toggle-btn {
   position: absolute;
-  top: 8px;
+  top: 14px;
   right: 32px;
   font-size: 24px;
   color: var(--color-dark-yellow);
@@ -152,7 +152,6 @@ p {
 }
 
 /* HOME */
-
 #home {
   background: url('/imgs/background.png') center/cover no-repeat;
   padding: 40px;
@@ -338,6 +337,7 @@ p {
   border-radius: var(--size-boder-radius);
   font-size: var(--font-regular);
   padding: 8px 48px;
+  margin-right: 8px;
 }
 
 .category__btn.selected,
@@ -419,7 +419,7 @@ p {
 }
 
 .project__description h3 {
-  color: #eeeeee;
+  color: var(--color-orange);
 }
 
 .project__description h3:after {
@@ -427,9 +427,9 @@ p {
   display: block;
   position: relative;
   left: 50%;
-  width: 25px;
+  width: 50px;
   height: 2px;
-  margin-left: -12px;
+  transform: translateX(-50%);
   margin-top:  8px;
   background-color: var(--color-dark-white);
 }
@@ -477,7 +477,7 @@ p {
 }
 
 .testimoinal__speech-bubble a {
- color: var(--color-dark-yellow);
+ color: var(--color-orange);
 }
 
 /* Contact */
@@ -541,8 +541,14 @@ p {
 
 #navbar {
   flex-direction: column;
+  padding: 8px 0;
   align-items: flex-start;
   background-color: var(--color-dark-blue);
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-dark-blue);
+  padding: 14px 0;
 }
 
 .navbar__menu {
@@ -554,6 +560,7 @@ p {
 
 .navbar__menu.open {
   display: block;
+  background-color: var(--color-dark-blue);
 }
 
 .about__majors {
