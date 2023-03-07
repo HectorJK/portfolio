@@ -184,6 +184,13 @@ p {
   border-radius: var(--size-boder-radius);
 }
 
+.home__contact:hover {
+  transform: scale(1.1);
+  background-color: var(--color-dark-yellow);
+  color: var(--color-dark-blue);
+  transition: all var(--animation-duration) ease;
+}
+
 /* Section common */
 
 .section {
