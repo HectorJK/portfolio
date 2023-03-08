@@ -64,6 +64,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+  padding: 0;
 }
 
 /* Typography */
@@ -357,7 +358,7 @@ p {
 .category__btn.selected .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
-  top: 0;
+  top: 5px;
 }
 
 .category__count {
@@ -370,8 +371,8 @@ p {
   line-height: 24px;
   display: inline-block;
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: -1px;
+  right: 10%;
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
 }
@@ -618,6 +619,10 @@ h3 {
   .category__btn {
     margin: 4px 0;
     width: 100%;
+  }
+
+  .category__count {
+    right: 25%;
   }
 
   .project {
